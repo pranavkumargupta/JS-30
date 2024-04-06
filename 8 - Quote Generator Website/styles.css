@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Poppins", sans-serif; */
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    background: #bbc6fa;
+}
+
+.quotebox {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* text-align: center; */
+}
+
+.quotebox h1 {
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    /* Adjust font weight if desired */
+    border-bottom: 2px solid #bbc6fa;
+    /* Color and thickness of the line */
+    /* padding-bottom: 5px; */
+    padding: 0 0 10px 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.quotebox blockquote::before, .quotebox blockquote::after{
+    content: '"';
+}
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.quotebox span{
+    display: block;
+    text-align: end;
+}
+
+.quotebox span::before{
+    content: '';
+    background: #8599fc;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    /* top: 50%; */
+    /* left: -30px; */
+    margin-left: -30px;
+    margin-top: 8px;
+}
+
+.quotebox div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* margin: 10px 30%; */
+}
+
+.quotebox button{
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    background: #8599fc;
+    color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+    width: auto;
+    cursor: pointer;
+
+}
+
+.fa-twitter{
+    padding-right: 5px;
+}
+
