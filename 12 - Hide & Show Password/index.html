@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Password Example</title>
+    <style>
+        #showPasswordCheckbox {
+            position: absolute;
+            left: -9999px;
+        }
+
+        label {
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        #showPasswordCheckbox:checked + label {
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+    <input type="password" id="passwordInput">
+    <label for="showPasswordCheckbox">
+        <input type="checkbox" id="showPasswordCheckbox"> Show Password
+    </label>
+
+    <script>
+        const passwordInput = document.getElementById('passwordInput');
+        const showPasswordCheckbox = document.getElementById('showPasswordCheckbox');
+
+        showPasswordCheckbox.addEventListener('change', () => {
+            const type = showPasswordCheckbox.checked ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+        });
+    </script>
+</body>
+</html>
