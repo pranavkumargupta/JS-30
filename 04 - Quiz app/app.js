@@ -53,7 +53,7 @@ function startQuiz(){
 
 function showQuestion(){
 
-    resetState();
+    // resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNum + '. ' + currentQuestion.question;
@@ -65,9 +65,9 @@ function showQuestion(){
         optionButtons.appendChild(button);
     })
 }
-// startQuiz();
+startQuiz();
 
-function resetState(){
-    nextButtonElement.style.display = "none";
-    while(optionButtons)
-}
+// function resetState(){
+//     nextButtonElement.style.display = "none";
+//     while(optionButtons)
+// }
