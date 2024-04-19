@@ -3,41 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show/Hide Password Example</title>
-    <style>
-        #showPasswordCheckbox {
-            position: absolute;
-            left: -9999px;
-        }
-
-        label {
-            display: inline-block;
-            cursor: pointer;
-            padding: 5px 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-
-        #showPasswordCheckbox:checked + label {
-            background-color: #eaeaea;
-        }
-    </style>
+    <title>Hide and Show password</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a84d16cbe2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <input type="password" id="passwordInput">
-    <label for="showPasswordCheckbox">
-        <input type="checkbox" id="showPasswordCheckbox"> Show Password
-    </label>
-
-    <script>
-        const passwordInput = document.getElementById('passwordInput');
-        const showPasswordCheckbox = document.getElementById('showPasswordCheckbox');
-
-        showPasswordCheckbox.addEventListener('change', () => {
-            const type = showPasswordCheckbox.checked ? 'text' : 'password';
-            passwordInput.setAttribute('type', type);
-        });
-    </script>
+    <div class="passwordbox">
+        <input type="password" id="password" placeholder="password"> 
+        <i class="fa-regular fa-eye" id="eyeIcon"></i>
+        <!-- <i class="fa-regular fa-eye-slash"></i> -->
+    </div>
+    
+    <script src="app.js"></script>
 </body>
 </html>

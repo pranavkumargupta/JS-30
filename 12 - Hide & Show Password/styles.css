@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    background-color: #08245a;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* height: 100vh; */
+    
+}
+
+.passwordbox{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: 50% auto;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+.passwordbox input{
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    font-size: 24px;
+    color: #08245a; 
+}
+
+.passwordbox i{
+    /* width: 35px; */
+    cursor: pointer;
+    display: none;
+
+} 
+
